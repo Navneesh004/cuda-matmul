@@ -1,0 +1,9 @@
+/matmul
+/matmul.exe
+build.log
+*.o
+*.ncu-rep
+results/ncu/
+__pycache__/
+.ipynb_checkpoints/
+*.csv.tmp
