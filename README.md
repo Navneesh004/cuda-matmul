@@ -24,17 +24,7 @@ multiples of the tile size or of 4.
 
 ## Results
 
-> **GPU: _fill in, e.g. NVIDIA Tesla T4 (Colab)_.** Numbers depend heavily on the GPU, so always quote it.
-
-Run `scripts/run_all.sh` (or the notebook), commit `results/`, then paste `results/summary.md` here.
-
-<!-- paste results/summary.md here -->
-
-![GFLOPS per kernel](results/timing.png)
-![GFLOPS vs matrix size](results/sizes.png)
-![Roofline](results/roofline.png)
-
-Headline figure to report: **kernel 7 reaches X GFLOPS, Y% of cuBLAS, at N = 4096** (from `summary.md`).
+Benchmarks not yet run; results will be added after running on a GPU.
 
 ## Running it
 
@@ -42,10 +32,9 @@ You need an NVIDIA GPU. No local card? Use Google Colab (free T4) or Kaggle (T4 
 
 ### Colab or Kaggle (easiest)
 
-1. Push this repo to GitHub.
-2. Open [notebooks/colab.ipynb](notebooks/colab.ipynb) in Colab (File → Open notebook → GitHub) or upload it
+1. Open [notebooks/colab.ipynb](notebooks/colab.ipynb) in Colab (File → Open notebook → GitHub) or upload it
    to Kaggle. Pick a GPU runtime.
-3. Set `GITHUB_USER` in the first cell and run all cells. It builds, tests, tunes, benchmarks, profiles and
+2. Run all cells. It builds, tests, tunes, benchmarks, profiles and
    draws the charts, then gives you `results.zip` to commit.
 
 ### Linux / WSL2 with the CUDA Toolkit
